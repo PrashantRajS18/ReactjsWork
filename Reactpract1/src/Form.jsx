@@ -19,7 +19,7 @@ function App() {
     const email = event.target.email.value;
     const password = event.target.password.value;
     const data = {name,email,password};
-    axios.post("https://run.mocky.io/v3/db651afd-6a8d-41f0-9efc-cba9d912c339/user",data)
+    axios.post("https://jsonplaceholder.typicode.com/posts",data)
     .then(Response => {
         console.log(Response)
      event.target.reset(formValues);
@@ -50,7 +50,7 @@ function App() {
      errors.password = "This is not a valid password format!";
     } else if (values.password.length < 4) {
       errors.password = "Password must be more than 4 characters";
-    } else if (values.password.length > 10) {
+    } else if (values.password.length > 20) {
       errors.password = "Password cannot exceed more than 10 characters";
     }
     return errors;
