@@ -1,5 +1,5 @@
 body {
-    background: #020024;
+    background: #9c9abf;
   
   }
   
@@ -11,7 +11,7 @@ body {
     height: 100vh;
     max-width: 500px;
     width: 100%;
-    margin: auto;
+    margin: 0 auto;
   }
   .container > form {
     width: 70%;

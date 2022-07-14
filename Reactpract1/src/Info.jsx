@@ -1,5 +1,6 @@
 import { useState } from "react";
 // import Inc from './Inc'
+import './index.css'
 
 const Info = ({fname}) => {
   const [count, SetCount] = useState(0);

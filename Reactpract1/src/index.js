@@ -8,15 +8,18 @@ import  ReactDOM  from 'react-dom/client';
 // import Pract5 from './Pract5';
 // import Apicall from './Apicall';
 // import Axo from './Axo'
-import Form from './Form';
+// import Form from './Form';
+import Menu from './Menu';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <>
     {/* <Parent /> */}
     {/* <Ref /> */}
-    <Form />
-    {/* <Apicall/>
-    <Axo /> */}
+    {/* <Form />
+     <Apicall/>
+    <Axo />  */}
+    <Menu />
+   
   </>
 );
 

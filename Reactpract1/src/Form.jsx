@@ -2,8 +2,9 @@ import axios from "axios";
 import { useState } from "react";
 import "./Form.css";
 
+
 function App() {
-  const initialValues = { username: "", email: "", password: "" };
+  const initialValues = { name: "", email: "", Mobile: "" };
   const [formValues, setFormValues] = useState(initialValues);
   const [formErrors, setFormErrors] = useState({});
 
@@ -17,14 +18,16 @@ function App() {
     setFormErrors(validate(formValues));
     const name = event.target.name.value;
     const email = event.target.email.value;
-    const password = event.target.password.value;
-    const data = {name,email,password};
-    axios.post("https://jsonplaceholder.typicode.com/posts",data)
+    const Mobile = event.target.Mobile.value;
+    const data = {name,email,Mobile};
+    axios.post("http://localhost:3001/contacts",data)
     .then(Response => {
         console.log(Response)
-     event.target.reset(formValues);
+     event.target.reset(formValues.data);
+     setFormValues(initialValues);
         
     })
+
     .catch(error => {
         console.log(error);
     })
@@ -35,46 +38,45 @@ function App() {
   const validate = (values) => {
     const errors = {};
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
-    const pswrdex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/;
-    if (!values.username) {
-      errors.username = "Username is required!";
+    const mobregx = /^(\+\d{1,3}[- ]?)?\d{10}$/;
+    if (!values.name) {
+      errors.name = "name is required!";
     }
     if (!values.email) {
       errors.email = "Email is required!";
     } else if (!regex.test(values.email)) {
       errors.email = "This is not a valid email format!";
     }
-    if (!values.password) {
-      errors.password = "Password is required";
-    }else if (!pswrdex.test(values.password)) {
-     errors.password = "This is not a valid password format!";
-    } else if (values.password.length < 4) {
-      errors.password = "Password must be more than 4 characters";
-    } else if (values.password.length > 20) {
-      errors.password = "Password cannot exceed more than 10 characters";
+    if (!values.Mobile) {
+      errors.Mobile = "mobile is required";
+    }else if (!mobregx.test(values.Mobile)) {
+     errors.Mobile = "This is not a valid mobile format!";
+   
     }
     return errors;
   };
 
   return (
+    <>
+    <h1>Fill your info</h1>
     <div className="container">
      
 
       <form id="form" onSubmit={handleSubmit}>
-        <h1>Login Form</h1>
+        <h1>Contact Form</h1>
         <div ></div>
         <div >
           <div  >
-            <label className = "label">Username</label>
+            <label className = "label">name</label>
             <input
               type="text"
-              name="username"
-              placeholder="Username"
-              value={formValues.username}
+              name="name"
+              placeholder="name"
+              value={formValues.name}
               onChange={handleChange}
             />
           </div>
-          <p>{formErrors.username}</p>
+          <p>{formErrors.name}</p>
           <div >
             <label>Email</label>
             <input
@@ -87,20 +89,21 @@ function App() {
           </div>
           <p>{formErrors.email}</p>
           <div >
-            <label>Password</label>
+            <label>Mobile number</label>
             <input
-              type="password"
-              name="password"
-              placeholder="Password"
-              value={formValues.password}
+              type="Mobile"
+              name="Mobile"
+              placeholder="Mobile number"
+              value={formValues.Mobile}
               onChange={handleChange}
             />
           </div>
-          <p>{formErrors.password}</p>
+          <p>{formErrors.Mobile}</p>
           <button>Submit</button>
         </div>
       </form>
     </div>
+    </>
   );
 }
 

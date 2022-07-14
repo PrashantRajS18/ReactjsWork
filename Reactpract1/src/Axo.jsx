@@ -8,7 +8,7 @@ const Axo = ()=>{
  const[items,Setitems]= useState([])
  const[err,seterr] = useState("")
 
- const mock = ()=>{
+ const mock = ()=>{ 
     axios.get("https://run.mocky.io/v3/db651afd-6a8d-41f0-9efc-cba9d912c339")
     .then((response)=>{
         // console.log(response)
@@ -37,18 +37,26 @@ useEffect(()=>{
     return(
         <>
         <div>
-            {api}
+           <h1>hello the Most bad jokes you find here</h1> 
+          <h1>{api}</h1> 
            {err}
            
         </div>
         <div>
           
         </div>
-        {items.map(data =>{
+        
+            <div>
+            <button onClick={()=> setrefresh(!refresh)}>New joke</button>
+            </div>
+            <div>
+            <h1>The Mocky Api data</h1>
+            {items.map(data =>{
                 return<h1>{data.name} age is {data.age}</h1>
             })}
-        <button onClick={()=> setrefresh(!refresh)}>New joke</button>
         <button onClick = {mock}>mock data</button>
+            </div>
+        
         
         
         </>
