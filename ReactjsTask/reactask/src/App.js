@@ -23,33 +23,30 @@ function App() {
    <>
 <Nav />
 <hr className='hr' style={{marginTop:"10px"}}></hr>
-<Adv src ={Adv1} width = "90%"/>
+<Adv className ="adv1 container hide" src ={Adv1} width = "90%"/>
 <Section1/>
 <CardFlex />
 <Adv  src ={Adv2} width = "80%" />
 <Editor 
   title = "Editor's Pick"
 />
-
 <Social />
 <Slider1 
   maintitle = "Limited Partner"
-  
   c2 = {Carouseldata6}
 />
-
 <Adv  src ={Adv2} width = "80%" />
 <VccSlide />
 <Upcome 
 maintitle = "Upcoming Events"
 />
 <div className='container'>
-        <hr className='hr mt-50' ></hr>
-        </div>
+  <hr className='hr mt-50' ></hr>
+  </div>
 <Adv  src ={Adv2} width = "80%" />
 <div className='container'>
-        <hr className='hr mt-50' ></hr>
-        </div>
+ <hr className='hr mt-50' ></hr>
+ </div>
 <Slider1 
   maintitle = "Founders"
   c2 = {Carouseldata5}
@@ -57,7 +54,6 @@ maintitle = "Upcoming Events"
 <Mostpop />
 <Adv  src ={Adv2} width = "80%" />
 <Vcc />
-
 <Slider1 
   maintitle = "TMT"
   c2 = {Carouseldata4}

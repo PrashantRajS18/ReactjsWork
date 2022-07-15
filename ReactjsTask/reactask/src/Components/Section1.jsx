@@ -19,7 +19,7 @@ const Section1 = ()=>{
                       </div>
                 </div>
                 <div className='sec1img'>
-                    <img  src={Sec1}  alt ="sec1 img"/>
+                    <img  src={Sec1} className = "sec1img1" alt ="sec1 img"/>
                 </div>
               </div>
           </div>

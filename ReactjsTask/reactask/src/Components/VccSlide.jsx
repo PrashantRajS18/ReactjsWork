@@ -12,7 +12,7 @@ function VccSlide(props) {
 
   return (
     <>
-        <div className='Vccslide postion'>
+        <div className='Vccslide postion container'>
         <div className='slideflex container mt-40'>
     <h1 className='Mont  ' style={{color:"#FFFFFF"}}>VCCircle Premium <img src='../imgs/crown.png'  alt ="crown"/></h1>
     <button className="buttonVcc Montbold" ><a href = "/" style={{color:"#FFFFFF"}}>Subscribe</a></button>

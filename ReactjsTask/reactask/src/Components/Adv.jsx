@@ -5,7 +5,7 @@ import Adv3  from '../imgs/adv3.png';
 function Adv(props) {
   return (
     <>
-        <div className='adv1 container hide'>
+        <div className={props.className}>
         <p className='adtxt Mont'>Advertisement</p>
         <div style={{textAlign:"center"}}>
         <img src={props.src} className ="adimg1" width={props.width} alt = "add 1" />
@@ -37,7 +37,7 @@ function Adv(props) {
         <h1>
         Infographic
         </h1>
-        <img className='mt-20'  src={social2} width ="100%" height="300" alt="socialimg" />
+        <img className='mt-20'  src={social2} width ="100%"  alt="socialimg" />
         </div>
         <div className='col-1 mt-50'>
         <hr className='vrt2'></hr>

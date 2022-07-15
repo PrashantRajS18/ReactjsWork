@@ -6,7 +6,7 @@ import Mostpop2 from '../imgs/mostpop2.png';
 import Mostpop3 from '../imgs/mostpop3.png';
 import Mostpop4 from '../imgs/mostpop4.png';
 import Adv3 from '../imgs/adv3.png' 
-function Mostpop() {
+function Mostpop() {                                                             
   return (
     <>
         <div className='container row' >

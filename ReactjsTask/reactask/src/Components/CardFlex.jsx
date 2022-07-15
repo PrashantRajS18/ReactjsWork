@@ -9,40 +9,51 @@ function CardFlex() {
   return (
     <>
     <div className='container Cardflex'>
-
-   
     <div className=' row'>
     <div className='col-3 postion'>
     <Cards 
+    className = "cardflx"
          src = {Cardimg1}
+         width= "100%"
          title = "ECONOMY"
          body = "Indian shares snap 5-day rally on weak global cues, post weekly gain"
         />
-        <Premium />
-      
+        <Premium
+        className ="Montbold Premiumtag1"
+         />
     </div>
     <div className='col-3 postion'>
     <Cards 
+    className = "cardflx"
          src = {Cardimg2}
+         width= "100%"
          title = "FINANCE"
          body = "Paytm to shut Canada B2C app amid eroding market capitalisation"
         />
-         <Premium />
+         <Premium 
+          className ="Montbold Premiumtag1"
+         />
     </div>
     <div className='col-3'>
     <Cards 
+    className = "cardflx"
          src = {Cardimg3}
+         width= "100%"
          title = "CONSUMER"
          body = "Exclusive: PE-backed sauce maker Wingreens acquires Lok Capital-backed cereal maker"
         />
     </div>
     <div className='col-3 postion'>
     <Cards 
+    className = "cardflx"
          src = {Cardimg4}
+         width= "100%"
          title = "ECONOMY"
          body = "GLOBAL MARKETS-European shares in the red after hawkish Fed comments"
         />
-         <Premium />
+         <Premium 
+          className ="Montbold Premiumtag1"
+         />
     </div>
     
        

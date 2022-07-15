@@ -1,10 +1,10 @@
 import React from 'react'
 
-function Premium() {
+function Premium(props) {
   return (
     <>
         <div className='Premium'>
-            <p className='Montbold Premiumtag'>PREMIUM</p>
+            <p className={props.className}>PREMIUM</p>
         </div>
     </>
   )

@@ -21,10 +21,10 @@ function Upcome(props) {
     <h1 className='Mont mt-40' >{props.maintitle}</h1>
     <p className='MontMed mt-40'>View More <img src='../imgs/rytarow.png' alt='arrow' /> </p>
     </div>
-    <div ref={ref} className=' mt-40 mediascroller '>
-  
+    <div ref={ref} className=' mt-40 flexupcome mediascroller '>
+       
        {Carouseldata8.map((item)=>{
-        return<div className='upcome flex '>
+        return<div className='upcome'>
              <div> 
                  <img src={item.src}   className='Cardeditor' width={item.width} height={props.height} alt = "cardimg" />
              </div>
