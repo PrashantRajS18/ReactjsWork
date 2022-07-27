@@ -1,6 +1,7 @@
 import React from 'react'
 import Cards from './Cards.';
 import Cardflex2 from './Cardflex2';
+import Premium from './Premium'
 import Truck from '../imgs/truck.png'
 import Mostpop2 from '../imgs/mostpop2.png';
 import Mostpop3 from '../imgs/mostpop3.png';
@@ -24,21 +25,27 @@ function Mostpop() {
           </div>
 
          </div>
-         <div className='col-4 mt-50'>
-         <div className=''>
+         <div className='col-4 mt-50 '>
+         <div className='postion'>
           <Cardflex2  src ={Mostpop2}
           className = "flex"
             title = "CONSUMER"
             body = "Consumer firm Madbow bags $2 mn funding at $13 mn valuation"
           />
+          <Premium 
+          className ="Montbold Premiumtag1-2 "
+         />
           </div>
           <hr className ="hr"></hr>
-          <div>
+          <div className='postion'>
           <Cardflex2  src ={Mostpop3}
           className = "flex"
             title = "ECONOMY"
             body = "Indian shares hit three-week lows in broad-based selling"
           />
+          <Premium 
+          className ="Montbold Premiumtag1-2 "
+         />
           </div>
           <hr className ="hr"></hr>
           <div>

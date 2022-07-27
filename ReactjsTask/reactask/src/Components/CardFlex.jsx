@@ -19,31 +19,34 @@ function CardFlex() {
          body = "Indian shares snap 5-day rally on weak global cues, post weekly gain"
         />
         <Premium
-        className ="Montbold Premiumtag1"
+        className ="Montbold premium"
          />
     </div>
     <div className='col-3 postion'>
     <Cards 
-    className = "cardflx"
+    className = "cardflx "
          src = {Cardimg2}
          width= "100%"
          title = "FINANCE"
          body = "Paytm to shut Canada B2C app amid eroding market capitalisation"
         />
-         <Premium 
-          className ="Montbold Premiumtag1"
+          <Premium
+        className ="Montbold Premiumtag"
          />
     </div>
-    <div className='col-3'>
+    <div className='col-3 postion'>
     <Cards 
-    className = "cardflx"
+    className = "cardflx "
          src = {Cardimg3}
          width= "100%"
          title = "CONSUMER"
-         body = "Exclusive: PE-backed sauce maker Wingreens acquires Lok Capital-backed cereal maker"
+         body = "Exclusive:PE-backed sauce maker Wingreen Capital-backed cereal maker"
         />
+          {/* <Premium
+        className ="Montbold Premiumtag"
+         /> */}
     </div>
-    <div className='col-3 postion'>
+    <div className='col-3 '>
     <Cards 
     className = "cardflx"
          src = {Cardimg4}
@@ -51,9 +54,7 @@ function CardFlex() {
          title = "ECONOMY"
          body = "GLOBAL MARKETS-European shares in the red after hawkish Fed comments"
         />
-         <Premium 
-          className ="Montbold Premiumtag1"
-         />
+         
     </div>
     
        

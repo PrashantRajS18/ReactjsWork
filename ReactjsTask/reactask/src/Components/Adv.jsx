@@ -4,13 +4,13 @@ import social2 from '../imgs/social2.png';
 import Adv3  from '../imgs/adv3.png';
 function Adv(props) {
   return (
-    <>
+    <>  <div className='container'>
         <div className={props.className}>
         <p className='adtxt Mont'>Advertisement</p>
         <div style={{textAlign:"center"}}>
         <img src={props.src} className ="adimg1" width={props.width} alt = "add 1" />
         </div>
-            
+        </div>
         </div>
     </>
   )
@@ -18,7 +18,8 @@ function Adv(props) {
  function Social() {
   return (
     <>
-      <div className='row container' style={{padding:"15px"}}>
+    <div className='container'>
+      <div className='row ' style={{padding:"15px"}}>
         <div className='col-4 mt-50'>
         <div className='socialpos'>
           <img  src={social1} width ="100%"  className='ad'  alt="socialimg" />
@@ -31,9 +32,12 @@ function Adv(props) {
           
         </div>
         <div className='col-1 mt-50'>
-        <hr className='vrt2'></hr>
+        <hr className='vrt2' style ={{marginLeft: "64px"}}></hr>
         </div>
-        <div className='col-3 mt-40 mb-20'>
+        <div className='col-3 mt-40 mb-20 postion'>
+        <div className='socialicon'>
+        <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+        </div>
         <h1>
         Infographic
         </h1>
@@ -54,10 +58,8 @@ function Adv(props) {
         </div>
         
       </div>
-      <div className='container'>
-        <hr className='hr mt-50' ></hr>
+   
         </div>
-      
     </>
   )
 

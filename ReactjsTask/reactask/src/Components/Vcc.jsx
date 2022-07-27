@@ -3,7 +3,8 @@ import React from 'react'
 function Vcc() {
   return (
     <>
-        <div className='container vcc'>
+        <div className='container'>
+        <div className='vcc'>
         <div className='vcc1'>
             <h1 className='Mont'>VCC TV</h1>
             <p className='MontMed mt-40'>View More <img src='../imgs/rytarow.png' alt='arrow' /> </p>
@@ -31,8 +32,8 @@ function Vcc() {
             </p>
           </div>
           <div className='mt-20'>
-            <p className='MontReg' style={{fontSize:"14px"}}>The global healthcare data is expected to grow at a CAGR of 36% by 2025. 
-            To make healthcare more equitable, affordable and accessible, there is a need to find
+            <p className='MontReg sec1para' style={{fontSize:"14px"}}>The global healthcare data is expected to grow at a CAGR of 36% by 2025. 
+            To make healthcare more equitable, affordable and accessibl, there is a need to find
               ways to unite and generate actionable insights from data. How collaborations and strategic 
             partnerships can harness the data to tackle the issues faced by the sector?</p>
           </div>
@@ -45,6 +46,8 @@ function Vcc() {
          </div>
 
          </div>
+        </div>
+        
         </div>
         <div className='container'>
         <hr className='hr mt-50' ></hr>

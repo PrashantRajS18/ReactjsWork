@@ -5,15 +5,16 @@ import './index.css';
 // import Memo from './Memo';
 // import Parent from './Parent'
 // import Ref from './Ref';
-import Form from './Form';
+// import Form from './Form';
 import reportWebVitals from './reportWebVitals';
+import Carousel from './Carousel';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <>
     {/* <Parent /> */}
     {/* <Ref /> */}
-    <Form />
+    <Carousel />
   </>
 );
 

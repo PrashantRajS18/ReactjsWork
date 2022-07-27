@@ -22,9 +22,9 @@ function Editor() {
             title = "ECONOMY"
             body = "EMERGING MARKETS - Asian markets mixedas they digest Chinese data South Korean stocks fall"
           />
-           <Premium />
+           <Premium className="Montbold Premiumtag1-1" />
           </div>
-
+          <hr className ="hr mt-30"></hr>
          </div>
          <div className='col-4 mt-50 '>
          
@@ -34,6 +34,9 @@ function Editor() {
             title = "FINANCE"
             body = "RIL invests Rs 7600 crores in acquisitions to strengthen retail arm"
           />
+          <Premium 
+          className ="Montbold Premiumtag1-2 "
+         />
          
            
           </div>

@@ -7,15 +7,15 @@ const Section1 = ()=>{
                 <div className='sec1sub1 '>
                     <a href="/" style={{color:"#096FFA"}} className="Montbold">MANUFACTURING</a>
                     <h2 className="Mont" style={{marginTop : "20px"}}>Warburg Pincus set to acquire majority stake in auto parts maker</h2>
-                    <p className="MontReg" style={{marginTop : "20px"}}>Private equity firm TPG, which is reportedly heading towards a public listing,
-                     said on Thursday it had appointed long-time company executive Todd Sisitsky as president,
+                    <p className="MontReg sec1para" style={{marginTop : "20px"}}>Private equity firm TPG, which is reportedly heading towards a public listing,
+                     said on Thursday it had appointed long-time   company executive Todd Sisitsky as president,
                       effective immediately.</p>
-                      <ul className = "MontMed">
+                      <ul className = "MontMed cardulsec1">
                       <li>30 September</li>
                         <li>Madhurima Nandy</li>
                       </ul>
                       <div>
-                      <button className="buttonSec1 Montbold" width = "100%" style={{marginTop : "10px"}}><a href = "/" style={{color:"#FFFFFF"}}>READ MORE</a></button>
+                      <button className="buttonSec1 Montbold hide" width = "100%" style={{marginTop : "10px"}}><a href = "/" style={{color:"#FFFFFF"}}>READ MORE</a></button>
                       </div>
                 </div>
                 <div className='sec1img'>

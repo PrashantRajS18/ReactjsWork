@@ -9,6 +9,7 @@ import Editor from './Components/Editor';
 // import Editorimg1 from '../imgs/editorimg1.png'
 import Adv1 from './imgs/adv1.png';
 import Adv2  from  './imgs/adv2.png';
+import Adv3  from  './imgs/adv3.png';
 // import Cards from './Components/Cards.';
 import Mostpop from './Components/Mostpop';
 import Vcc from './Components/Vcc';
@@ -22,39 +23,50 @@ function App() {
   return (
    <>
 <Nav />
-<hr className='hr' style={{marginTop:"10px"}}></hr>
-<Adv className ="adv1 container hide" src ={Adv1} width = "90%"/>
+{/* <hr className='hr boxshdw hrmargin'></hr> */}
+<Adv className ="adv2  hide" src ={Adv1} width = "90%"/>
 <Section1/>
+<Adv className ="adv3 none "  src ={Adv3} width = "80%" />
 <CardFlex />
-<Adv  src ={Adv2} width = "80%" />
+<Adv className ="adv1 hide "  src ={Adv2} width = "80%" />
+<Adv className ="adv3 none "  src ={Adv3} width = "80%" />
 <Editor 
   title = "Editor's Pick"
 />
 <Social />
+<div className='container'>
+        <hr className='hr mt-50' ></hr>
+        </div>
 <Slider1 
+className = "blrrelate hide  "
   maintitle = "Limited Partner"
   c2 = {Carouseldata6}
 />
-<Adv  src ={Adv2} width = "80%" />
-<VccSlide />
+<Adv className ="adv1  hide"  src ={Adv2} width = "80%" />
+<VccSlide 
+  className = "blrrelate2 hide "
+/>
 <Upcome 
 maintitle = "Upcoming Events"
 />
 <div className='container'>
   <hr className='hr mt-50' ></hr>
   </div>
-<Adv  src ={Adv2} width = "80%" />
+<Adv className ="adv1 hide "  src ={Adv2} width = "80%" />
+<Adv className ="adv3 none "  src ={Adv3} width = "80%" />
 <div className='container'>
  <hr className='hr mt-50' ></hr>
  </div>
 <Slider1 
+className = "blrrelate hide "
   maintitle = "Founders"
   c2 = {Carouseldata5}
 />
 <Mostpop />
-<Adv  src ={Adv2} width = "80%" />
+<Adv className ="adv1 hide" src ={Adv2} width = "80%" />
 <Vcc />
 <Slider1 
+className = "blrrelate hide "
   maintitle = "TMT"
   c2 = {Carouseldata4}
 />
@@ -66,11 +78,14 @@ maintitle = "Upcoming Events"
         <hr className='hr mt-50' ></hr>
         </div>
 <Slider1 
+className = "blrrelate hide "
   maintitle = "TechCircle"
   c2 = {Carouseldata3}
 />
-<Adv  src ={Adv2} width = "80%" />
+<Adv className ="adv1 hide " src ={Adv2} width = "80%" />
+<Adv className ="adv3 none "  src ={Adv3} width = "80%" />
 <Slider1 
+className = "blrrelate hide "
   maintitle = "Mergers & Acquisitions"
 c2 = {Carouseldata2}
 />
@@ -78,6 +93,7 @@ c2 = {Carouseldata2}
         <hr className='hr mt-50' ></hr>
         </div>
 <Slider1 
+className = "blrrelate hide "
   maintitle = "Financials"
   c2 = {Carouseldata}
 />

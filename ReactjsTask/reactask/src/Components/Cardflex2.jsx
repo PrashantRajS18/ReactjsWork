@@ -8,12 +8,12 @@ function Cardflex2(props) {
         <div> 
             <img src={props.src}   className='Cardeditor' width={props.width} height={props.height} alt = "cardimg" />
         </div>
-        <div>
+        <div style={{padding:"10px"}}>
         <div className='cardtitle  p-20' style={{marginTop :"5px"}}>
         <a href="/" style={{color:"#096FFA"}} className="Montbold">{props.title}</a>
         </div>
-        <div className='cardbody mt-10 p-20 MontMed'>
-         <p style={{fontSize:"12px"}}>{props.body}</p>
+        <div className='cardbody cardpara mt-10 p-20 MontMed'>
+         <p className='fz'>{props.body}</p>
         </div>
         <ul className = " carduled mt-10 p-20 MontMed ">
            <li>30 September</li>

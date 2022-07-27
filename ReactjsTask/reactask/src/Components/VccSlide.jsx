@@ -12,27 +12,33 @@ function VccSlide(props) {
 
   return (
     <>
-        <div className='Vccslide postion container'>
+        <div className='Vccslide postion '>
+        <div className='container'>
         <div className='slideflex container mt-40'>
-    <h1 className='Mont  ' style={{color:"#FFFFFF"}}>VCCircle Premium <img src='../imgs/crown.png'  alt ="crown"/></h1>
-    <button className="buttonVcc Montbold" ><a href = "/" style={{color:"#FFFFFF"}}>Subscribe</a></button>
-    {/* <p className='MontMed mt-40'>View More > </p> */}
-    <div className='relate'>
-    <button  onClick={() => scroll(200)} className='round'><img src='../imgs/slideicon.png' alt='icon' /></button>
+        <div className='Vccpre'>
+        <h1 className='Mont  ' style={{color:"#FFFFFF"}}>VCCircle Premium <img src='../imgs/crown.png'  alt ="crown"/></h1>
+        </div>
+   <div className='hide'>
+   <button className="buttonVcc Montbold" ><a href = "/" style={{color:"#FFFFFF"}}>Subscribe</a></button>
+   </div>
     </div>
-    <div className='relateryt2'>
-    <button  onClick={() => scroll(-200)} className='round'><img src='../imgs/slideicon.png' className='sIcon' alt='icon' /></button>
+    <div className={props.className}></div>
+          <div ref={ref} className=' mediascroller'>
+          <div className='relate'>
+    <button  onClick={() => scroll(300)} className='round'><img src='../imgs/slideicon.png' alt='icon' /></button>
     </div>
-    </div>
-          <div ref={ref} className='container mediascroller'>
-          
+    {/* <div className='relateryt2'>
+    <button  onClick={() => scroll(-300)} className='round'><img src='../imgs/slideicon.png' className='sIcon' alt='icon' /></button>
+    </div> */}
             {Carouseldata7.map((item)=>
             {
-             return <div className='VccCard'>
-               <div className='postion'>
+             return <div className='VccCard postion'>
+             <Premium className=" Montbold PremiumtagVcc" />
+               <div className=''>
+               
                 <img src={item.src} alt ="cardimg" width="100%"/>
                 
-                <Premium />
+                
                
                <div className='cardtitle p-10'>
                 <a href="/" style={{color:"#096FFA"}} className="Montbold">{item.title}</a>
@@ -47,6 +53,10 @@ function VccSlide(props) {
         </div>
               </div>
             })}
+          </div>
+          <div className='none vccbtn2' >
+   <button className="buttonVcc Montbold" ><a href = "/" style={{color:"#FFFFFF"}}>Subscribe</a></button>
+   </div>
           </div>
           </div>
     </>

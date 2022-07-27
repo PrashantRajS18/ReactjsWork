@@ -1,7 +1,7 @@
 import React from 'react'
 import Cardflex2 from './Cardflex2'
 import { Adv } from './Adv'
-// import Premium from './Premium'
+import Premium from './Premium'
 import stories1 from '../imgs/stories1.png'
 import stories2 from '../imgs/stories2.png'
 import stories3 from '../imgs/stories3.png'
@@ -22,6 +22,7 @@ function Stories() {
      <div className='row'>
      <div className='col-6'>
      <Cardflex2  src ={stories1}
+     width = "100%"
      className = "editorcards"
     sectitle = "More Stories"
             title = "FINANCE"
@@ -30,76 +31,110 @@ function Stories() {
      </div>
      <div className=' col-6 mt-40 postion' >
      <Cardflex2  src ={stories2}
+     width = "100%"
      className = "editorcards"
             title = "ECONOMY"
             body = "GLOBAL MARKETS - Asia shares fall as Treasury yields hit fresh highs"
           />
-          {/* <Premium className="pr" /> */}
+         <Premium 
+          className ="Montbold Premiumtag1-3 "
+         />
      </div>
      </div>
      <div className='row'>
-     <div className='col-6'>
+     <div className='col-6 postion' >
      <Cardflex2  src ={stories3}
+     width = "100%"
      className = "editorcards"
     
             title = "CONSUMER"
             body = "RPSG Capital Ventures to raise Rs 500 cr for consumer-focused fund"
           />
+          <Premium 
+          className ="Montbold Premiumtag1-3 "
+         />
      </div>
      <div className=' col-6 ' >
      <Cardflex2  src ={stories4}
+     width = "100%"
      className = "editorcards"
+    
             title = "TMT"
-            body = "Kotak’s asset arm, others lead $6 mn bet on cancer detection platform Epigeneres"
+            body = "RPSG Capital Ventures to raise Rs 500 cr for consumer-focused fund"
           />
      </div>
      </div>
      <div className='row'>
      <div className='col-6'>
      <Cardflex2  src ={stories5}
+     width = "100%"
      className = "editorcards"
             title = "PEOPLE"
             body = "Jobs portal Apna appoints former PayU’s Shantanu Preetam as its first CTO"
           />
      </div>
-     <div className=' col-6 ' >
+     <div className=' col-6 postion ' >
      <Cardflex2  src ={stories6}
+     width = "100%"
      className = "editorcards"
             title = "FINANCE"
             body = "Actis in talks to acquire Welspun group’s roads for up to Rs 10,000 cr"
           />
+          <Premium 
+          className ="Montbold Premiumtag1-3 "
+         />
+     </div>
+     </div>
+     <div className='row none'>
+     <div className='col-6 '>
+     <Cardflex2  src ={stories7}
+     width = "100%"
+     className = "editorcards"
+            title = "CONSUMER"
+            body = "Actor Tiger Shroff, BharatPe’s Ashneer Grover, others back Freadom"
+          />
      </div>
      </div>
  </div>
- <Adv  src ={Adv2} width = "80%" />
+ <Adv className="adv1 hide" src ={Adv2} width = "80%" />
  <div className='container'>
      <div className='row'>
-     <div className='col-6 hide'>
+     <div className='col-6 '>
      <Cardflex2  src ={stories7}
+     width = "100%"
      className = "editorcardsh"
             title = "CONSUMER"
             body = "Actor Tiger Shroff, BharatPe’s Ashneer Grover, others back Freadom"
           />
      </div>
-     <div className=' col-6 hide ' >
+     <div className=' col-6 hide postion ' >
      <Cardflex2  src ={stories8}
+     width = "100%"
      className = "editorcardsh"
             title = "INFRASTRUCTURE"
             body = "Shadowfax’s pivot pays off as focus sharpens on last mile delivery"
           />
+          <Premium 
+          className ="Montbold Premiumtag1-3 "
+         />
      </div>
      </div>
      <div className='row'>
-     <div className='col-6 hide'>
+     <div className='col-6 hide postion'>
      <Cardflex2  src ={stories9}
+     width = "100%"
      className = "editorcardsh"
     
             title = "ECONOMY"
             body = "Indian shares slip after five-day rally; HCL top drag ahead of results"
           />
+          <Premium 
+          className ="Montbold Premiumtag1-3 "
+         />
      </div>
      <div className=' col-6 hide ' >
      <Cardflex2  src ={stories10}
+     width = "100%"
      className = "editorcardsh"
             title = "HEALTHCARE"
             body = "Health Care At Home India secures $15 mn from new PE investor ABC World Asia"
@@ -107,15 +142,20 @@ function Stories() {
      </div>
      </div>
      <div className='row'>
-     <div className='col-6 hide'>
+     <div className='col-6 postion hide'>
      <Cardflex2  src ={stories11}
+     width = "110%"
      className = "editorcardsh"
             title = "CONSUMER"
             body = "Dogsee Chew raises Rs 50 cr in Series A from Mankind Pharma; Sixth Sense Ventures"
           />
+          <Premium 
+          className ="Montbold Premiumtag1-3 "
+         />
      </div>
      <div className=' col-6 hide ' >
      <Cardflex2  src ={stories12}
+     width = "100%"
      className = "editorcardsh"
             title = "FINANCE"
             body = "Walton Street BlackSoil Real Estate Debt Fund II invests in two housing projects"
